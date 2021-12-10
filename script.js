@@ -16,7 +16,8 @@ function calcular(){
 	let qdtTotalCerveja = cervejaPP(duracao) * adultos;
 	let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao)/2 * criancas);
 
-	resultado.innerHTML = `<p>${qdtTotalCarne / 1000} Kg de Carne`
+	resultado.innerHTML = `<br>`
+	resultado.innerHTML += `<p>${qdtTotalCarne / 1000} Kg de Carne`
 	resultado.innerHTML += `<p>${Math.ceil(qdtTotalCerveja / 355)} Latas de Cerveja</p>`
 	resultado.innerHTML += `<p>${Math.ceil(qdtTotalCarne / 2000)} Garrafas de 2L de Bebidas</p>`
 
